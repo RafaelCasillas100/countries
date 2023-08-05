@@ -1,8 +1,15 @@
 import React from "react";
-import Main from "./pages/main";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CountriesDashboard from "./pages/CountriesDashboard";
 
-function App() {
-  return <Main />;
-}
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="*" element={<CountriesDashboard />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;
