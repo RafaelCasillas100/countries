@@ -29,7 +29,7 @@ const CountryInformation: React.FC<Props> = ({ writtenCountry, country }) => {
       <CenteredText>Results for {writtenCountry}</CenteredText>
 
       <Row>
-        <Col span={16} offset={4}>
+        <Col xs={24} md={{ span: 20, offset: 2 }} xl={{ span: 16, offset: 4 }}>
           <Space direction="vertical" style={{ width: "100%" }}>
             <Text>
               Country Name: <Text strong>{country.name.official}</Text>

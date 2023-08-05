@@ -35,7 +35,11 @@ const CountriesDashboard: React.FC = () => {
   return (
     <Containter>
       <Row>
-        <Col span={10} offset={7}>
+        <Col
+          xs={{ span: 20, offset: 2 }}
+          md={{ span: 14, offset: 5 }}
+          xl={{ span: 10, offset: 7 }}
+        >
           <SearchCountryBar
             setCountryName={setCountryName}
             isFetchingCountry={isFetchingCountry}
